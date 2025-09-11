@@ -3,6 +3,7 @@ import { DemoBackgroundPaths } from '@/components/ui/hero';
 import Layout from '../layouts/Layout.astro';
 import "../styles/global.css";
 import { NavBarDemo } from '@/components/ui/navbar';
+import About from '@/components/ui/about';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -10,4 +11,5 @@ import { NavBarDemo } from '@/components/ui/navbar';
 <Layout>
 	<NavBarDemo />
 	<DemoBackgroundPaths client:load/>
+	<About />
 </Layout>

@@ -59,12 +59,9 @@ export function BackgroundPaths({
   
     // Trigger the download on button click
     const handleDownload = () => {
-        console.log("Button clicked!"); // <-- Add this line
-        const link = document.createElement("a");
-        link.href = "/resume.pdf";
-        link.download = "resume.pdf";
-        link.click();
-      };
+      // This opens the file in a new tab
+      window.open("/resume.pdf", "_blank");
+    };
   
     return (
       <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-white dark:bg-neutral-950">
@@ -121,7 +118,7 @@ export function BackgroundPaths({
                 onClick={handleDownload} // Attach the download handler here
               >
                 <span className="opacity-90 group-hover:opacity-100 transition-opacity">
-                  Download Resume
+                  View Resume
                 </span>
               </Button>
             </div>
