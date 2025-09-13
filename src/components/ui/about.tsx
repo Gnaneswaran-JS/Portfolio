@@ -1,11 +1,13 @@
 import { BGPattern } from "@/components/ui/bg-pattern";
+import { section } from "framer-motion/client";
 
 export default function About() {
 	return (
-		<div className="mx-auto max-w space-y-5 p-8">
+		<section id="about">
+      <div className="mx-auto max-w space-y-5 p-8">
 			<div className="relative flex aspect-video flex-col items-center justify-center ">
 				<BGPattern variant="grid" mask="fade-edges" />
-				<section id="about" className="relative w-full py-16 md:py-24 lg:py-32  overflow-hidden">
+				<section  className="relative w-full py-16 md:py-24 lg:py-32  overflow-hidden">
       
       {/* BGPattern is placed here. `absolute` makes it fill the parent, and `-z-10` places it behind the content. */}
       
@@ -41,5 +43,6 @@ export default function About() {
     </section>
 			</div>
 		</div>
+    </section>
 	);
 }
